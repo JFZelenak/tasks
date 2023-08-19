@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+}
+h2 {
+    margin: 0px;
+}
+.title-card, .bottom-card {
+    background-color: #FFD966;
+    color: #312e2c;
+    border: 0px;
+}
+.list-card {
+    background-color: #FFF2CC;
+    color: #312e2c;
+    border: 0px;
+}
+input:checked + span {
+    color: #808080;
+    text-decoration: line-through;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-item {
+    background-color: #FFD966;
+    border: 0px;
+    border-radius: 5px;
+}
+.nav-link {
+    color: #312e2c;
+}
+.btn {
+    background-color: #FFF2CC;
+    border: 1px solid #312e2c;
+    padding: 2px 10px 2px 10px;
+    margin: 0px;
+}
+.text-field-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text-field {
+    background-color: #FFF2CC;
+    border: 1px solid #312e2c;
+    border-radius: 5px;
+    padding: 2px 10px 2px 10px;
+    margin: 0px;
+}
+.checkbox, .checkbox:checked {
+	appearance: none;
+	width: 20px;
+    min-width: 20px;
+	height: 20px;
+    border-radius: 5px;
+	background-clip: content-box;
+	padding: 3px;
+    margin: 0px 5px 0px 0px;
+    border: 1px solid #312e2c;
+}
+.checkbox:checked {
+	border: 1px solid #808080;
+    background-color: #808080;
+}
+.list-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.list-group-item:hover, .nav-item:hover, .btn:hover {
+    background: #F4B183;
+}
+
+/*https://colorhunt.co/palette/fff2ccffd966f4b183dfa67b*/

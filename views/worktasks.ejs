@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+
+<div class="body-container">
+<div class="title-card card p-2 mx-3 mt-2 nav-item" style="width: 18rem;"> 
+    <a href="/todaystasks" class="nav-link">   
+        <h2>Todays Tasks</h2>
+    </a>
+</div>
+
+<div class="title-card card p-2 mx-3 mt-2" style="width: 18rem;">    
+<h2>Work Tasks</h2>
+<form action="/workTasksSubmit" method="POST">
+    <div class="text-field-input-container">
+        <div><input class="text-field" type="text" name="newWorkListItem" placeholder="- new task -"></div>
+        <div><input class="btn" type="submit" value="ADD"></div>
+    </div>
+</form>
+</div>
+
+<div class="list-card card p-2 mx-3 mt-2" style="width: 18rem;">
+    <% if(locals.workList) { %>
+        <% workList.forEach((workList) => { %>
+        <div class="list-container list-group-item">
+            <input class="checkbox" type="checkbox"><span> <%= workList %></span>
+        </div>
+        <% }) %>
+    <% } %>
+</div>
+
+<div class="bottom-card card p-2 mx-3 mt-2" style="width: 18rem;">
+<form action="/workTasksClearList" method="POST">
+    <input class="btn" type="submit" value="CLEAR LIST">
+</form>
+</div>
+</div>
+
+<%- include("partials/footer.ejs") %>
